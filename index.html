@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کدینو چک‌لیست فرانت‌اند  | نسخه حرفه‌ای</title>
+    <meta name="description" content="کامل‌ترین چک‌لیست فرانت‌اند به زبان فارسی با طراحی انقلابی">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href=""><img src="" alt=""></a>
+            <h1>چک‌لیست حرفه‌ای فرانت‌اند</h1>
+            <p class="subtitle">کامل‌ترین راهنمای توسعه فرانت‌اند به زبان فارسی</p>
+            
+            <div class="progress-overall">
+                <div class="progress-title">
+                    <h2>پیشرفت کلی پروژه</h2>
+                    <span class="progress-value">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+                <small>تعداد آیتم‌های تکمیل شده: <span id="completed-count">0</span> از <span id="total-count">0</span></small>
+            </div>
+        </header>
+
+        <main>
+            <section id="categories-section">
+                <div class="categories-grid" id="categories-container">
+                    <!-- دسته‌بندی‌ها به صورت دینامیک پر می‌شوند -->
+                </div>
+            </section>
+
+            <section id="details-section" class="details-container">
+                <button class="back-btn" id="back-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    بازگشت
+                </button>
+                
+                <div class="details-header">
+                    <h2 class="details-title" id="details-title">عنوان دسته‌بندی</h2>
+                    <div>
+                        <span>پیشرفت این بخش: </span>
+                        <span class="category-progress-value" id="category-progress-value">0%</span>
+                    </div>
+                </div>
+                
+                <div class="progress-bar">
+                    <div class="progress-fill" id="category-progress-bar" style="width: 0%"></div>
+                </div>
+                
+                <div class="checklist-items" id="checklist-items">
+                    <!-- آیتم‌های چک‌لیست به صورت دینامیک پر می‌شوند -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="floating-btns">
+        <button class="floating-btn" id="dark-mode-btn" title="حالت شب">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <button class="floating-btn" id="export-btn" title="خروجی گرفتن">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+
+    <script src="scriipt.js"></script>
+</body>
+</html>
